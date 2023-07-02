@@ -1,0 +1,431 @@
+{
+    "ieltsWriting1":[
+        {
+            "id":1,
+            "thesis": "The amount of money that a children's charity located in the USA spent and received in one year, 2016.",
+            "image":"../assets/tasks/picture1.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":2,
+            "thesis": "The Proportions of Pupils Attending Four Secondary School Types Between Between 2000 and 2009.",
+            "image":"../assets/tasks/picture2.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":3,
+            "thesis": "The city of Brandfield. City planners have decided to build a new shopping mall for the area, and two sites, S1 and S2 have been proposed.",
+            "image":"../assets/tasks/picture3.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":4,
+            "thesis": "The process that is used to manufacture bricks for the building industry",
+            "image":"../assets/tasks/picture4.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":5,
+            "thesis": "The components of GDP in the UK from 1992 to 2000.",
+            "image":"../assets/tasks/picture5.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":6,
+            "thesis": "The electricity generated in Germany and France from all sources and renewables in the year 2009.",
+            "image":"../assets/tasks/picture6.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":7,
+            "thesis": "British Emigration to selected destinations between 2004 and 2007.",
+            "image":"../assets/tasks/picture7.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":8,
+            "thesis": "Visits to and from the UK from 1979 to 1999, and the most popular countries visited by UK residents in 1999.",
+            "image":"../assets/tasks/picture8.png",
+            "category":"taskWriting1"
+        },
+        {
+            "id":9,
+            "thesis": "Thefts per thousand vehicles in four countries between 1990 and 1999.",
+            "image":"../assets/tasks/picture9.png",
+            "category":"taskWriting1"
+        }
+    ],
+    "ieltsWriting2":[
+        {
+            "id":1,
+            "thesis": "Some people think that the teenage years are the happiest times of most people's lives. Others think that adult life brings more happiness, in spite of greater responsibilities.",
+            "task":"Discuss both these views and give your own opinion.",
+            "category":"taskWriting2"
+        },
+        {
+            "id":2,
+            "thesis": "In many professional sports, there is an increase in the number of athletes using banned substances to improve their performance.",
+            "task":"What are the causes of the phenomenon and what are some of the possible solutions?",
+            "category":"taskWriting2"
+        },
+        {
+            "id":3,
+            "thesis": "Details of politicians’ private lives should not be published in newspapers. ",
+            "task":"To what extent do you agree or disagree?",
+            "category":"taskWriting2"
+        },
+        {
+            "id":4,
+            "thesis": " Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. ",
+            "task":"Discuss both views and give your own opinion.",
+            "category":"taskWriting2"
+        },
+        {
+            "id":5,
+            "thesis": "TThe development of tourism contributed to English becoming the most prominent language in the world. Some people think this will lead to English becoming the only language to be spoken globally.",
+            "task":"What are the advantages and disadvantages to having one language in the world?",
+            "category":"taskWriting2"
+        },
+        {
+            "id":6,
+            "thesis": "Increasing the price of petrol is the best way to solve growing traffic and pollution problems.",
+            "task":"To what extent do you agree or disagree? What other measures do you think might be effective?",
+            "category":"taskWriting2"
+        }
+    ],
+    "ieltsVideo":[
+            {
+                "id":1,
+                "source":"https://www.youtube.com/watch?v=GVcltxCJiYw&t=156s",
+                "category" : "taskVideo1"
+            },
+            {
+                "id":2,
+                "source":"https://www.youtube.com/watch?v=betunjjwMuQ",
+                "category" : "taskVideo1"
+                
+            },
+            {
+                "id":3,
+                "source":"https://www.youtube.com/watch?v=zLjKaArAu2o",
+                "category" : "taskVideo1"
+                
+            },
+            {
+                "id":4,
+                "source":"https://www.youtube.com/watch?v=aHLn5myhEs0",
+                "category" : "taskVideo1"
+                
+            },{
+                "id":5,
+                "source":"https://www.youtube.com/watch?v=DpidurrrlGA&pp=ygUrd3JpdGluZyB0YXNrIDIgYWR2YW50YWdlcyBhbmQgZGlzYWR2YW50YWdlcw%3D%3D",
+                "category" : "taskVideo2"
+            },
+            {
+                "id":6,
+                "source":"https://www.youtube.com/watch?v=7l8Q_t4mUwI&pp=ygUgd3JpdGluZyB0YXNrIDIgYWdyZWUgb3IgZGlzYWdyZWU%3D",
+                "category" : "taskVideo2"
+                
+            },
+            {
+                "id":7,
+                "source":"https://www.youtube.com/watch?v=_9nrTXOdiII&pp=ygUpd3JpdGluZyB0YXNrIDIgcHJvYmxlbSBhbmQgc29sdXRpb24gZXNzYXk%3D",
+                "category" : "taskVideo2"
+                
+            },
+            {
+                "id":8,
+                "source":"https://www.youtube.com/watch?v=MGR0TP7ZOJM&pp=ygU3d3JpdGluZyB0YXNrIDIgZGlzY3VzcyBib3RoIHZpZXdzIGFuZCBnaXZlIHlvdXIgb3Bpbmlvbg%3D%3D",
+                "category" : "taskVideo2"
+                
+            }
+    ],
+    "satPractice":[
+        {
+            "id":1,
+            "source" : "../assets/sat/math.pdf",
+            "category" : "satMath"
+        },
+        {
+            "id":2,
+            "source" : "../assets/sat/reading.pdf",
+            "category" : "satReading"
+        }
+    ],
+    "practiceDescription":[
+            {
+                "id":1,
+                "title": "Мастер-класс по Writing Task 1",
+                "date": "01",
+                "month": "Апреля",
+                "time": "19:00 - 21:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":2,
+                "title": "Мастер-класс по Writing Task 1",
+                "date": "08",
+                "month": "Марта",
+                "time": "14:00 - 16:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":3,
+                "title": "Мастер-класс по Writing Task 1",
+                "date": "15",
+                "month": "Августа",
+                "time": "12:00 - 14:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":4,
+                "title": "Мастер-класс по Writing Task 1",
+                "date": "28",
+                "month": "Мая",
+                "time": "14:00 - 16:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":5,
+                "title": "Мастер-класс по Writing Task 2",
+                "date": "03",
+                "month": "Марта",
+                "time": "20:00 - 22:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":6,
+                "title": "Мастер-класс по Writing Task 2",
+                "date": "08",
+                "month": "Марта",
+                "time": "17:00 - 19:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":7,
+                "title": "Мастер-класс по Writing Task 2",
+                "date": "13",
+                "month": "Декабря",
+                "time": "15:00 - 17:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":8,
+                "title": "Мастер-класс по Writing Task 2",
+                "date": "22",
+                "month": "Августа",
+                "time": "11:00 - 13:00",
+                "task": "Просмотр Видео",
+                "category" : "taskVideo2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":9,
+                "title": "Практика Writing Task 1",
+                "date": "04",
+                "month": "Апреля",
+                "time": "11:00 - 13:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":10,
+                "title": "Практика Writing Task 1",
+                "date": "11",
+                "month": "Июня",
+                "time": "09:00 - 10:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":11,
+                "title": "Практика Writing Task 1",
+                "date": "14",
+                "month": "Марта",
+                "time": "11:00 - 12:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":12,
+                "title": "Практика Writing Task 1",
+                "date": "15",
+                "month": "Марта",
+                "time": "13:00 - 14:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":13,
+                "title": "Практика Writing Task 1",
+                "date": "17",
+                "month": "Июля",
+                "time": "18:00 - 19:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":14,
+                "title": "Практика Writing Task 1",
+                "date": "19",
+                "month": "Марта",
+                "time": "21:00 - 22:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":15,
+                "title": "Практика Writing Task 1",
+                "date": "24",
+                "month": "Октября",
+                "time": "15:00 - 16:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            }
+            ,
+            {
+                "id":16,
+                "title": "Практика Writing Task 1",
+                "date": "28",
+                "month": "Ноября",
+                "time": "17:00 - 18:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":17,
+                "title": "Практика Writing Task 1",
+                "date": "29",
+                "month": "Марта",
+                "time": "08:00 - 09:00",
+                "task": "Практика",
+                "category" : "taskWriting1",
+                "exam" : "IELTS"
+            },
+            {
+                "id":18,
+                "title": "Практика Writing Task 2",
+                "date": "02",
+                "month": "Марта",
+                "time": "11:00 - 12:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":19,
+                "title": "Практика Writing Task 2",
+                "date": "18",
+                "month": "Декабря",
+                "time": "13:00 - 14:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":20,
+                "title": "Практика Writing Task 2",
+                "date": "21",
+                "month": "Февраля",
+                "time": "18:00 - 19:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },
+            {
+                "id":21,
+                "title": "Практика Writing Task 2",
+                "date": "26",
+                "month": "Марта",
+                "time": "20:00 - 21:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },{
+                "id":22,
+                "title": "Практика Writing Task 2",
+                "date": "28",
+                "month": "Февраля",
+                "time": "17:00 - 18:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },{
+                "id":23,
+                "title": "Практика Writing Task 2",
+                "date": "30",
+                "month": "Мая",
+                "time": "09:00 - 10:00",
+                "task": "Практика",
+                "category" : "taskWriting2",
+                "exam" : "IELTS"
+            },{
+                "id":24,
+                "title": "Практика Math SAT",
+                "date": "01",
+                "month": "Августа",
+                "time": "09:00 - 10:00",
+                "task": "Практика",
+                "category" : "taskMath",
+                "exam" : "SAT"
+            },{
+                "id":25,
+                "title": "Практика Math SAT",
+                "date": "08",
+                "month": "Марта",
+                "time": "10:00 - 12:00",
+                "task": "Практика",
+                "category" : "taskMath",
+                "exam" : "SAT"
+            },{
+                "id":26,
+                "title": "Практика Math SAT",
+                "date": "18",
+                "month": "Октября",
+                "time": "09:00 - 11:00",
+                "task": "Практика",
+                "category" : "taskMath",
+                "exam" : "SAT"
+            },{
+                "id":27,
+                "title": "Практика Verbal SAT",
+                "date": "24",
+                "month": "Марта",
+                "time": "17:00 - 19:00",
+                "task": "Практика",
+                "category" : "taskVerbal",
+                "exam" : "SAT"
+            },{
+                "id":28,
+                "title": "Практика Verbal SAT",
+                "date": "29",
+                "month": "Ноября",
+                "time": "20:00 - 22:00",
+                "task": "Практика",
+                "category" : "taskVerbal",
+                "exam" : "SAT"
+            }
+        ]
+}

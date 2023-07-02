@@ -1,0 +1,13 @@
+.progress{
+    width: 95%;
+    height: 12px;
+    border-radius: 60px;
+    margin:auto;
+    margin-top: 10px;
+    }
+
+.block> .progress{
+    background-color: rgba(0, 255, 0, 0.645);
+    transition: 0.5s ease-in;
+    border-radius: 15px;
+}
