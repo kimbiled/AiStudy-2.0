@@ -10,22 +10,43 @@ import GamePractice from "./pages/GamePractice.tsx";
 import VideoPractice from "./pages/VideoPractice.tsx";
 import Profile from "./pages/Profile.tsx";
 import Quiz from "../src/components/Quiz/Quiz.tsx";
+import Reading from "./pages/Reading.tsx";
+import Listening from "./pages/Listening.tsx";
+import Speaking from "./pages/Speaking.tsx";
 export default function App() {
-	return (
-		<AuthProvider>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="register" element={<Register></Register>} />
-					<Route path="login" element={<Login></Login>} />
-					<Route path="education" element={<Education></Education>} />
-					<Route path="writing-practice" element={<WritingPractice></WritingPractice>} />
-					<Route path="game-practice" element={<GamePractice></GamePractice>} />
-					<Route path="video-practice" element={<VideoPractice></VideoPractice>} />
-					<Route path="quiz" element={<Quiz></Quiz>} />
-					<Route path="profile" element={<Profile />} />
-				</Route>
-			</Routes>
-		</AuthProvider>
-	);
+   return (
+      <AuthProvider>
+         <Routes>
+            <Route path="/" element={<Layout />}>
+               <Route index element={<Home />} />
+               <Route path="register" element={<Register></Register>} />
+               <Route path="login" element={<Login></Login>} />
+               <Route path="education" element={<Education></Education>} />
+               <Route path="quiz" element={<Quiz></Quiz>} />
+               <Route
+                  path="writing-practice"
+                  element={<WritingPractice></WritingPractice>}
+               />
+               <Route
+                  path="game-practice"
+                  element={<GamePractice></GamePractice>}
+               />
+               <Route
+                  path="video-practice"
+                  element={<VideoPractice></VideoPractice>}
+               />
+               <Route path="reading-practice" element={<Reading></Reading>} />
+               <Route
+                  path="listening-practice"
+                  element={<Listening></Listening>}
+               />
+               <Route
+                  path="speaking-practice"
+                  element={<Speaking></Speaking>}
+               />
+               <Route path="profile" element={<Profile />} />
+            </Route>
+         </Routes>
+      </AuthProvider>
+   );
 }
