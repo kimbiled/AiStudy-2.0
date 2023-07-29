@@ -15,6 +15,7 @@
 
 			"@config/*": ["./config/*"],
 
+			"@api/*": ["./api/*"],
 			"@modules/*": ["./modules/*"],
 			"@helper/*": ["./helper/*"]
 		},
