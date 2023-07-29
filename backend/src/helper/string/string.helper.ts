@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { hashSync, compareSync } from "bcrypt";
 
 @Injectable()
-export class StringService {
+export class StringHelper {
 	public normalizer(value: string): string {
 		return value.toLowerCase().replace(/ /g, "");
 	}

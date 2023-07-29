@@ -9,6 +9,26 @@ import { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
 export class AuthService {
 	constructor(private readonly userService: UserService, private readonly sessionService: SessionService) {}
 
-	public async localSignUp(dto: CreateUserDto) {}
-	public async localSignIn(dto: ValidateUserDto) {}
+	public async localSignUp(dto: CreateUserDto, ip: string, device: string) {
+		const user = await this.userService.create(dto);
+
+		const session = await this.sessionService.create({
+			userId: user.id,
+			ip,
+			device,
+		});
+
+		return session.id;
+	}
+	public async localSignIn(dto: ValidateUserDto, ip: string, device: string) {
+		const user = await this.userService.validate(dto);
+
+		const session = await this.sessionService.create({
+			userId: user.id,
+			ip,
+			device,
+		});
+
+		return session.id;
+	}
 }
