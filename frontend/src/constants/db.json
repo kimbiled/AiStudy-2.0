@@ -1,202 +1,406 @@
 {
-	"taskWriting1": [
-		{
-			"id": 1,
-			"thesis": "The amount of money that a children's charity located in the USA spent and received in one year, 2016.",
-			"image": "../assets/tasks/picture1.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 2,
-			"thesis": "The Proportions of Pupils Attending Four Secondary School Types Between Between 2000 and 2009.",
-			"image": "../assets/tasks/picture2.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 3,
-			"thesis": "The city of Brandfield. City planners have decided to build a new shopping mall for the area, and two sites, S1 and S2 have been proposed.",
-			"image": "../assets/tasks/picture3.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 4,
-			"thesis": "The process that is used to manufacture bricks for the building industry",
-			"image": "../assets/tasks/picture4.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 5,
-			"thesis": "The components of GDP in the UK from 1992 to 2000.",
-			"image": "../assets/tasks/picture5.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 6,
-			"thesis": "The electricity generated in Germany and France from all sources and renewables in the year 2009.",
-			"image": "../assets/tasks/picture6.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 7,
-			"thesis": "British Emigration to selected destinations between 2004 and 2007.",
-			"image": "../assets/tasks/picture7.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 8,
-			"thesis": "Visits to and from the UK from 1979 to 1999, and the most popular countries visited by UK residents in 1999.",
-			"image": "../assets/tasks/picture8.png",
-			"category": "taskWriting1"
-		},
-		{
-			"id": 9,
-			"thesis": "Thefts per thousand vehicles in four countries between 1990 and 1999.",
-			"image": "../assets/tasks/picture9.png",
-			"category": "taskWriting1"
-		}
-	],
-	"taskWriting2": [
-		{
-			"id": 1,
-			"thesis": "Some people think that the teenage years are the happiest times of most people's lives. Others think that adult life brings more happiness, in spite of greater responsibilities.",
-			"task": "Discuss both these views and give your own opinion.",
-			"category": "taskWriting2"
-		},
-		{
-			"id": 2,
-			"thesis": "In many professional sports, there is an increase in the number of athletes using banned substances to improve their performance.",
-			"task": "What are the causes of the phenomenon and what are some of the possible solutions?",
-			"category": "taskWriting2"
-		},
-		{
-			"id": 3,
-			"thesis": "Details of politicians’ private lives should not be published in newspapers. ",
-			"task": "To what extent do you agree or disagree?",
-			"category": "taskWriting2"
-		},
-		{
-			"id": 4,
-			"thesis": " Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. ",
-			"task": "Discuss both views and give your own opinion.",
-			"category": "taskWriting2"
-		},
-		{
-			"id": 5,
-			"thesis": "TThe development of tourism contributed to English becoming the most prominent language in the world. Some people think this will lead to English becoming the only language to be spoken globally.",
-			"task": "What are the advantages and disadvantages to having one language in the world?",
-			"category": "taskWriting2"
-		},
-		{
-			"id": 6,
-			"thesis": "Increasing the price of petrol is the best way to solve growing traffic and pollution problems.",
-			"task": "To what extent do you agree or disagree? What other measures do you think might be effective?",
-			"category": "taskWriting2"
-		}
-	],
-	"taskVideo1": [
-		{
-			"id": 5,
-			"source": "https://www.youtube.com/embed/DpidurrrlGA",
-			"category": "taskVideo2"
-		},
-		{
-			"id": 6,
-			"source": "https://www.youtube.com/embed/7l8Q_t4mUwI",
-			"category": "taskVideo2"
-		},
-		{
-			"id": 7,
-			"source": "https://www.youtube.com/embed/_9nrTXOdiII",
-			"category": "taskVideo2"
-		},
-		{
-			"id": 8,
-			"source": "https://www.youtube.com/embed/MGR0TP7ZOJM",
-			"category": "taskVideo2"
-		}
-	],
-	"satPractice": [
-		{
-			"id": 1,
-			"source": "../assets/sat/math.pdf",
-			"category": "satMath"
-		},
-		{
-			"id": 2,
-			"source": "../assets/sat/reading.pdf",
-			"category": "satReading"
-		}
-	],
-	"practiceDescription": [
-		{
-			"id": 1,
-			"title": "Мастер-класс по Writing Task 1",
-			"date": "01",
-			"month": "Апреля",
-			"time": "19:00 - 21:00",
-			"task": "Просмотр Видео",
-			"category": "taskVideo1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 2,
-			"title": "Мастер-класс по Writing Task 1",
-			"date": "08",
-			"month": "Марта",
-			"time": "14:00 - 16:00",
-			"task": "Просмотр Видео",
-			"category": "taskVideo1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 3,
-			"title": "Мастер-класс по Writing Task 1",
-			"date": "15",
-			"month": "Августа",
-			"time": "12:00 - 14:00",
-			"task": "Просмотр Видео",
-			"category": "taskVideo1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 10,
-			"title": "Практика Writing Task 1",
-			"date": "11",
-			"month": "Июня",
-			"time": "09:00 - 10:00",
-			"task": "Практика",
-			"category": "taskWriting1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 16,
-			"title": "Практика Writing Task 1",
-			"date": "28",
-			"month": "Ноября",
-			"time": "17:00 - 18:00",
-			"task": "Практика",
-			"category": "taskWriting1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 17,
-			"title": "Практика Writing Task 1",
-			"date": "29",
-			"month": "Марта",
-			"time": "08:00 - 09:00",
-			"task": "Практика",
-			"category": "taskWriting1",
-			"exam": "IELTS"
-		},
-		{
-			"id": 18,
-			"title": "Практика Writing Task 2",
-			"date": "02",
-			"month": "Марта",
-			"time": "11:00 - 12:00",
-			"task": "Практика",
-			"category": "taskWriting2",
-			"exam": "IELTS"
-		}
-	]
+   "taskWriting1": [
+      {
+         "id": 1,
+         "thesis": "The amount of money that a children's charity located in the USA spent and received in one year, 2016.",
+         "image": "../assets/tasks/picture1.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 2,
+         "thesis": "The Proportions of Pupils Attending Four Secondary School Types Between Between 2000 and 2009.",
+         "image": "../assets/tasks/picture2.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 3,
+         "thesis": "The city of Brandfield. City planners have decided to build a new shopping mall for the area, and two sites, S1 and S2 have been proposed.",
+         "image": "../assets/tasks/picture3.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 4,
+         "thesis": "The process that is used to manufacture bricks for the building industry",
+         "image": "../assets/tasks/picture4.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 5,
+         "thesis": "The components of GDP in the UK from 1992 to 2000.",
+         "image": "../assets/tasks/picture5.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 6,
+         "thesis": "The electricity generated in Germany and France from all sources and renewables in the year 2009.",
+         "image": "../assets/tasks/picture6.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 7,
+         "thesis": "British Emigration to selected destinations between 2004 and 2007.",
+         "image": "../assets/tasks/picture7.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 8,
+         "thesis": "Visits to and from the UK from 1979 to 1999, and the most popular countries visited by UK residents in 1999.",
+         "image": "../assets/tasks/picture8.png",
+         "category": "taskWriting1"
+      },
+      {
+         "id": 9,
+         "thesis": "Thefts per thousand vehicles in four countries between 1990 and 1999.",
+         "image": "../assets/tasks/picture9.png",
+         "category": "taskWriting1"
+      }
+   ],
+   "taskWriting2": [
+      {
+         "id": 1,
+         "thesis": "Some people think that the teenage years are the happiest times of most people's lives. Others think that adult life brings more happiness, in spite of greater responsibilities.",
+         "task": "Discuss both these views and give your own opinion.",
+         "category": "taskWriting2"
+      },
+      {
+         "id": 2,
+         "thesis": "In many professional sports, there is an increase in the number of athletes using banned substances to improve their performance.",
+         "task": "What are the causes of the phenomenon and what are some of the possible solutions?",
+         "category": "taskWriting2"
+      },
+      {
+         "id": 3,
+         "thesis": "Details of politicians’ private lives should not be published in newspapers. ",
+         "task": "To what extent do you agree or disagree?",
+         "category": "taskWriting2"
+      },
+      {
+         "id": 4,
+         "thesis": " Some people think that parents should teach their children how to be good members of society. Others, however, believe that school is the best place to learn this. ",
+         "task": "Discuss both views and give your own opinion.",
+         "category": "taskWriting2"
+      },
+      {
+         "id": 5,
+         "thesis": "TThe development of tourism contributed to English becoming the most prominent language in the world. Some people think this will lead to English becoming the only language to be spoken globally.",
+         "task": "What are the advantages and disadvantages to having one language in the world?",
+         "category": "taskWriting2"
+      },
+      {
+         "id": 6,
+         "thesis": "Increasing the price of petrol is the best way to solve growing traffic and pollution problems.",
+         "task": "To what extent do you agree or disagree? What other measures do you think might be effective?",
+         "category": "taskWriting2"
+      }
+   ],
+   "taskVideo1": [
+      {
+         "id": 5,
+         "source": "https://www.youtube.com/embed/DpidurrrlGA",
+         "category": "taskVideo2"
+      },
+      {
+         "id": 6,
+         "source": "https://www.youtube.com/embed/7l8Q_t4mUwI",
+         "category": "taskVideo2"
+      },
+      {
+         "id": 7,
+         "source": "https://www.youtube.com/embed/_9nrTXOdiII",
+         "category": "taskVideo2"
+      },
+      {
+         "id": 8,
+         "source": "https://www.youtube.com/embed/MGR0TP7ZOJM",
+         "category": "taskVideo2"
+      }
+   ],
+   "satPractice": [
+      {
+         "id": 1,
+         "source": "../assets/sat/math.pdf",
+         "category": "satMath"
+      },
+      {
+         "id": 2,
+         "source": "../assets/sat/reading.pdf",
+         "category": "satReading"
+      }
+   ],
+   "practiceDescription": [
+      {
+         "id": 3,
+         "title": "Практика по Reading Part 1",
+         "date": "17",
+         "month": "Августа",
+         "time": "12:00 - 14:00",
+         "task": "Прочитайте текст и ответьте на вопросы",
+         "category": "readingTasks",
+         "exam": "IELTS"
+      },
+      {
+         "id": 4,
+         "title": "Практика по Speaking Part 1",
+         "date": "18",
+         "month": "Августа",
+         "time": "12:00 - 14:00",
+         "task": "Прочитайте задание и ответьте на вопросы",
+         "category": "speakingTasks",
+         "exam": "IELTS"
+      },
+      {
+         "id": 5,
+         "title": "Практика по Listening Part 1",
+         "date": "19",
+         "month": "Августа",
+         "time": "12:00 - 14:00",
+         "task": "Послушайте аудио и ответьте на вопросы",
+         "category": "listeningTasks",
+         "exam": "IELTS"
+      },
+      {
+         "id": 1,
+         "title": "Мастер-класс по Writing Task 1",
+         "date": "01",
+         "month": "Апреля",
+         "time": "19:00 - 21:00",
+         "task": "Просмотр Видео",
+         "category": "taskVideo1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 2,
+         "title": "Мастер-класс по Writing Task 1",
+         "date": "08",
+         "month": "Марта",
+         "time": "14:00 - 16:00",
+         "task": "Просмотр Видео",
+         "category": "taskVideo1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 3,
+         "title": "Мастер-класс по Writing Task 1",
+         "date": "15",
+         "month": "Августа",
+         "time": "12:00 - 14:00",
+         "task": "Просмотр Видео",
+         "category": "taskVideo1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 10,
+         "title": "Практика Writing Task 1",
+         "date": "11",
+         "month": "Июня",
+         "time": "09:00 - 10:00",
+         "task": "Практика",
+         "category": "taskWriting1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 16,
+         "title": "Практика Writing Task 1",
+         "date": "28",
+         "month": "Ноября",
+         "time": "17:00 - 18:00",
+         "task": "Практика",
+         "category": "taskWriting1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 17,
+         "title": "Практика Writing Task 1",
+         "date": "29",
+         "month": "Марта",
+         "time": "08:00 - 09:00",
+         "task": "Практика",
+         "category": "taskWriting1",
+         "exam": "IELTS"
+      },
+      {
+         "id": 18,
+         "title": "Практика Writing Task 2",
+         "date": "02",
+         "month": "Марта",
+         "time": "11:00 - 12:00",
+         "task": "Практика",
+         "category": "taskWriting2",
+         "exam": "IELTS"
+      }
+   ],
+   "readingTasks": [
+      {
+         "id": 0,
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus tincidunt augue sed blandit. Maecenas tristique diam justo, id dignissim velit fermentum id. Integer sollicitudin, erat ut convallis rutrum, risus magna pretium tortor, non facilisis neque nulla semper leo. Sed ut arcu lectus. Morbi eu diam id urna viverra sollicitudin. Donec at venenatis risus, non interdum justo. Sed sollicitudin, purus eu vehicula commodo, turpis ipsum ultricies mauris, fermentum tincidunt massa neque non ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus tincidunt augue sed blandit. Maecenas tristique diam justo, id dignissim velit fermentum id. Integer sollicitudin, erat ut convallis rutrum, risus magna pretium tortor, non facilisis neque nulla semper leo. Sed ut arcu lectus. Morbi eu diam id urna viverra sollicitudin. Donec at venenatis risus, non interdum justo. Sed sollicitudin, purus eu vehicula commodo, turpis ipsum ultricies mauris, fermentum tincidunt massa neque non ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus tincidunt augue sed blandit. Maecenas tristique diam justo, id dignissim velit fermentum id. Integer sollicitudin, erat ut convallis rutrum, risus magna pretium tortor, non facilisis neque nulla semper leo. Sed ut arcu lectus. Morbi eu diam id urna viverra sollicitudin. Donec at venenatis risus, non interdum justo. Sed sollicitudin, purus eu vehicula commodo, turpis ipsum ultricies mauris, fermentum tincidunt massa neque non ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus tincidunt augue sed blandit. Maecenas tristique diam justo, id dignissim velit fermentum id. Integer sollicitudin, erat ut convallis rutrum, risus magna pretium tortor, non facilisis neque nulla semper leo. Sed ut arcu lectus. Morbi eu diam id urna viverra sollicitudin. Donec at venenatis risus, non interdum justo. Sed sollicitudin, purus eu vehicula commodo, turpis ipsum ultricies mauris, fermentum tincidunt massa neque non ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+         "test": [
+            {
+               "id": 0,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 1,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 2,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 3,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            }
+         ]
+      }
+   ],
+   "listeningTasks": [
+      {
+         "id": 0,
+         "source": "",
+         "test": [
+            {
+               "id": 0,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 1,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 2,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            },
+            {
+               "id": 3,
+               "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet?",
+               "answers": [
+                  {
+                     "id": 0,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 1,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  },
+                  {
+                     "id": 2,
+                     "answer": "Lorem ipsum dolor sit amet"
+                  }
+               ],
+               "rightAnswer": 2
+            }
+         ]
+      }
+   ],
+   "speakingTasks": [
+      {
+         "id": 0,
+         "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet"
+      }
+   ]
 }
