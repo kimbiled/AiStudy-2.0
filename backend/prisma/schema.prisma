@@ -51,7 +51,7 @@ model Session {
 model writing {
 	id String @id @default(uuid())
 
-	taksType Int
+	taskType Int
 
 	thesis String
 	path   String?
