@@ -10,6 +10,8 @@ yarn.lock
 .editorconfig
 .prettierrc
 
+backend/key.json
+
 # Logs
 logs
 *.log
