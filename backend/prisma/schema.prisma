@@ -2,48 +2,106 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-    provider = "prisma-client-js"
+	provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
+	provider = "postgresql"
+	url      = env("DATABASE_URL")
 }
 
 model User {
-    id String @id @default(uuid())
+	id String @id @default(uuid())
 
-    username String @unique
-    password String
+	username String @unique
+	password String
 
-    email       String  @unique
-    emailStatus Boolean @default(false)
+	email       String  @unique
+	emailStatus Boolean @default(false)
 
-    firstName String?
-    lastName  String?
-    bio       String?
+	firstName String?
+	lastName  String?
+	bio       String?
 
-    Session Session[]
+	Session Session[]
 
-    createdAt DateTime @default(now())
-    alteredAt DateTime @default(now()) @updatedAt
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
 
-    @@map("Users")
+	@@map("Users")
 }
 
 model Session {
-    id String @id @default(uuid())
+	id String @id @default(uuid())
 
-    ip     String
-    device String
+	ip     String
+	device String
 
-    user   User   @relation(fields: [userId], references: [id])
-    userId String
+	user   User   @relation(fields: [userId], references: [id])
+	userId String
 
-    expirationDate DateTime
+	expirationDate DateTime
 
-    createdAt DateTime @default(now())
-    alteredAt DateTime @default(now()) @updatedAt
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
 
-    @@map("Sessions")
+	@@map("Sessions")
+}
+
+model writing {
+	id String @id @default(uuid())
+
+	taksType Int
+
+	thesis String
+	path   String?
+
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
+
+	@@map("Writings")
+}
+
+model Reading {
+	id String @id @default(uuid())
+
+	text String
+
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
+
+	@@map("Readings")
+}
+
+model Test {
+	id String @id @default(uuid())
+
+	type    ETestType
+	quesion String
+	answers Answer[]
+
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
+
+	@@map("Tests")
+}
+
+model Answer {
+	id String @id @default(uuid())
+
+	text      String
+	isCorrect Boolean
+
+	Test   Test   @relation(fields: [testId], references: [id])
+	testId String @unique
+
+	createdAt DateTime @default(now())
+	alteredAt DateTime @default(now()) @updatedAt
+
+	@@map("Answers")
+}
+
+enum ETestType {
+	reading
+	listening
 }
