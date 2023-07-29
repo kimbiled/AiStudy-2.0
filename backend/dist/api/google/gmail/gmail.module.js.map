@@ -1,1 +1,0 @@
-{"version":3,"file":"gmail.module.js","sourceRoot":"","sources":["../../../../src/api/google/gmail/gmail.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAwC;AAExC,mDAA+C;AAMxC,IAAM,WAAW,yBAAjB,MAAM,WAAW;CAAG,CAAA;sBAAd,WAAW;IAJvB,IAAA,eAAM,EAAC;QACP,SAAS,EAAE,CAAC,4BAAY,CAAC;QACzB,OAAO,EAAE,CAAC,4BAAY,CAAC;KACvB,CAAC;GACW,WAAW,CAAG"}
