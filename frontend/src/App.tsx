@@ -1,4 +1,3 @@
-import { AuthProvider } from "./context/Auth/useAuth.tsx";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout.tsx";
 import Home from "./pages/Home.tsx";
@@ -13,9 +12,11 @@ import Quiz from "../src/components/Quiz/Quiz.tsx";
 import Reading from "./pages/Reading.tsx";
 import Listening from "./pages/Listening.tsx";
 import Speaking from "./pages/Speaking.tsx";
+
+import Providers from "./context/Providers.tsx";
 export default function App() {
 	return (
-		<AuthProvider>
+		<Providers>
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
@@ -32,6 +33,6 @@ export default function App() {
 					<Route path="profile" element={<Profile />} />
 				</Route>
 			</Routes>
-		</AuthProvider>
+		</Providers>
 	);
 }

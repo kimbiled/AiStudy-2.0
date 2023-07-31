@@ -9,6 +9,8 @@ yarn.lock
 .idea
 .editorconfig
 .prettierrc
+.env
+.env.*
 
 backend/key.json
 
