@@ -4,6 +4,7 @@ import { UserService } from "@modules/user/user.service";
 import { SessionService } from "@modules/session/session.service";
 
 import { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
+import { RevokeSessionDto } from "@modules/session/dto";
 
 @Injectable()
 export class AuthService {
@@ -30,5 +31,8 @@ export class AuthService {
 		});
 
 		return session.id;
+	}
+	public async logOut(dto: RevokeSessionDto) {
+		await this.sessionService.revoke(dto);
 	}
 }

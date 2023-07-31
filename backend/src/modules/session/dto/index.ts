@@ -7,3 +7,7 @@ export class CreateSessionDto {
 export class GetSessionDto {
 	readonly sessionId: string;
 }
+
+export class RevokeSessionDto {
+	readonly sessionId: string;
+}
