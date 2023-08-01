@@ -23,6 +23,8 @@ model User {
     lastName  String?
     bio       String?
 
+    profileImagePath String?
+
     Session Session[]
 
     createdAt DateTime @default(now())

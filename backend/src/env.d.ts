@@ -3,6 +3,7 @@ declare global {
 		interface ProcessEnv {
 			readonly BACKEND_PORT: string;
 
+			readonly GOOGLE_PROJECT_ID: string;
 			readonly GOOGLE_KEY_FILE: string;
 			readonly GOOGLE_ROOT_EMAIL: string;
 			readonly GOOGLE_ROOT_CLIENT_ID: string;

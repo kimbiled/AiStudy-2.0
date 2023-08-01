@@ -1,6 +1,7 @@
 import * as process from "process";
 
 export const GoogleConfig = {
+	PROJECT_ID: process.env.GOOGLE_PROJECT_ID,
 	KEY_FILE: process.env.GOOGLE_KEY_FILE,
 
 	ROOT_MAIL: process.env.GOOGLE_ROOT_EMAIL,

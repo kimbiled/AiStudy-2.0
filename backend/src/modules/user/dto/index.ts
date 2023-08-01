@@ -11,3 +11,10 @@ export class ValidateUserDto {
 export class GetUserDto {
 	username: string;
 }
+
+export class UpdateUserDto {
+	userId: string;
+	firstName?: string;
+	lastName?: string;
+	bio?: string;
+}
