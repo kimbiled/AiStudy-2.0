@@ -12,7 +12,7 @@ import { StringHelper } from "@helper/string/string.helper";
 
 import { CreateUserDto, GetUserDto, ValidateUserDto } from "@modules/user/dto";
 import { SessionService } from "@modules/session/session.service";
-import { GetSessionDto } from "@modules/session/dto";
+import { GetSessionDto, ValidateSessionDto } from "@modules/session/dto";
 import { FilterDto } from "@root/types";
 import { ObjectHelper } from "@helper/object/object.helper";
 
@@ -67,8 +67,8 @@ export class UserService {
 		return user;
 	}
 
-	public async getMe(dto: GetSessionDto) {
-		const session = await this.sessionService.get(dto);
+	public async getMe(dto: ValidateSessionDto) {
+		const session = await this.sessionService.validate(dto);
 
 		return await this.prismaService.user
 			.findUnique({

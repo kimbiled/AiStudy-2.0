@@ -2,9 +2,9 @@ import { Controller, Get, HttpCode, HttpStatus, Query } from "@nestjs/common";
 
 import { UserService } from "@modules/user/user.service";
 
-import { GetSessionDto } from "@modules/session/dto";
-import { GetUserDto } from "@modules/user/dto";
-import { FilterDto } from "@root/types";
+import type { ValidateSessionDto } from "@modules/session/dto";
+import type { GetUserDto } from "@modules/user/dto";
+import type { FilterDto } from "@root/types";
 
 @Controller("/user")
 export class UserController {
@@ -12,7 +12,7 @@ export class UserController {
 
 	@HttpCode(HttpStatus.OK)
 	@Get("/get-me")
-	public async getMe(@Query() dto: GetSessionDto) {
+	public async getMe(@Query() dto: ValidateSessionDto) {
 		return await this.userService.getMe(dto);
 	}
 
