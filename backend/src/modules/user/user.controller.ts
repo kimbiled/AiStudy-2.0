@@ -6,6 +6,7 @@ import {
 	HttpStatus,
 	Post,
 	Query,
+	Req,
 	UploadedFile,
 	UseInterceptors,
 } from "@nestjs/common";
@@ -13,10 +14,9 @@ import {
 import { UserService } from "@modules/user/user.service";
 import { FileInterceptor } from "@nestjs/platform-express";
 
-import type { ValidateSessionDto } from "@modules/session/dto";
-import type { GetUserDto } from "@modules/user/dto";
+import type { GetUserDto, UpdateUserDto, GetMeDto } from "@modules/user/dto";
 import type { FilterDto } from "@root/types";
-import { UpdateUserDto } from "@modules/user/dto";
+import { Request } from "express";
 
 @Controller("/user")
 export class UserController {
@@ -24,8 +24,11 @@ export class UserController {
 
 	@HttpCode(HttpStatus.OK)
 	@Get("/get-me")
-	public async getMe(@Query() dto: ValidateSessionDto) {
-		return await this.userService.getMe(dto);
+	public async getMe(@Query() dto: GetMeDto, @Req() req: Request) {
+		return await this.userService.getMe({
+			sessionId: dto.sessionId,
+			device: req.headers["user-agent"],
+		});
 	}
 
 	@HttpCode(HttpStatus.OK)

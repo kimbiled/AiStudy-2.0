@@ -17,6 +17,8 @@
 
 			"@api/*": ["./api/*"],
 			"@modules/*": ["./modules/*"],
+
+			"@lib/*": ["./lib/*"],
 			"@helper/*": ["./helper/*"]
 		},
 		"incremental": true,

@@ -9,6 +9,7 @@ import {
 import { PrismaService } from "@modules/prisma/prisma.service";
 import { SessionService } from "@modules/session/session.service";
 import { StorageService } from "@api/google/storage/storage.service";
+import { GmailService } from "@api/google/gmail/gmail.service";
 
 import { StringHelper } from "@helper/string/string.helper";
 import { ObjectHelper } from "@helper/object/object.helper";
@@ -16,6 +17,7 @@ import { ObjectHelper } from "@helper/object/object.helper";
 import type { CreateUserDto, GetUserDto, UpdateUserDto, ValidateUserDto } from "@modules/user/dto";
 import type { ValidateSessionDto } from "@modules/session/dto";
 import type { FilterDto } from "@root/types";
+import { VerifyMailDto } from "@modules/user/dto";
 
 @Injectable()
 export class UserService {
@@ -23,6 +25,7 @@ export class UserService {
 		private readonly prismaService: PrismaService,
 		private readonly sessionService: SessionService,
 		private readonly storageService: StorageService,
+		private readonly gmailService: GmailService,
 		private readonly stringHelper: StringHelper,
 		private readonly objectHelper: ObjectHelper
 	) {}
@@ -151,8 +154,15 @@ export class UserService {
 				return user;
 			})
 			.catch((error) => {
-				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
+	}
+
+	public async verifyMail(dto: VerifyMailDto) {
+		// finish later
+		await this.gmailService.send({
+			to: dto.mail,
+			html: `<a href="http://localhost:8000/">Verify</a>`,
+		});
 	}
 }

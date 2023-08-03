@@ -1,7 +1,8 @@
 import React from "react";
 import UserLevel from "../components/UserLevel";
-import UserEducation from "../components/UserEducation";
+import { useUser } from "../context/user/useUser.tsx";
 const Profile = () => {
+	const { user } = useUser();
 	const [showModal, setShowModal] = React.useState(false);
 	const [isFullInfo, setFullInfo] = React.useState(false);
 
@@ -12,7 +13,9 @@ const Profile = () => {
 			) : (
 				<div className="font-lato font-bold">
 					<div className="text-center mt-16">
-						<p className="text-smrtBlack shadow1 text-[55px]">Мейрамбеков Нурсултан</p>
+						<p className="text-smrtBlack shadow1 text-[55px]">
+							{user?.lastName} {user?.firstName}
+						</p>
 						<p className="text-primary text-3xl mt-4"> Моя страница</p>
 					</div>
 
