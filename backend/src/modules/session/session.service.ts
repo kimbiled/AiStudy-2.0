@@ -1,7 +1,8 @@
-import { Injectable, InternalServerErrorException } from "@nestjs/common";
+import { Injectable, InternalServerErrorException, UnauthorizedException } from "@nestjs/common";
 
-import { CreateSessionDto, GetSessionDto, RevokeSessionDto } from "@modules/session/dto";
 import { PrismaService } from "@modules/prisma/prisma.service";
+
+import type { CreateSessionDto, GetSessionDto, RevokeSessionDto, ValidateSessionDto } from "@modules/session/dto";
 
 @Injectable()
 export class SessionService {
@@ -51,6 +52,23 @@ export class SessionService {
 				where: {
 					id: dto.sessionId,
 				},
+			})
+			.catch((error) => {
+				throw new InternalServerErrorException(error);
+			});
+	}
+
+	public async validate(dto: ValidateSessionDto) {
+		return await this.get({
+			sessionId: dto.sessionId,
+		})
+			.then(async (session) => {
+				if (session.device === dto.device) return session;
+
+				await this.revoke({
+					sessionId: dto.sessionId,
+				});
+				throw new UnauthorizedException("Devices are not matching");
 			})
 			.catch((error) => {
 				throw new InternalServerErrorException(error);

@@ -31,10 +31,16 @@ export function UserProvider({ children }: { children: ReactNode }) {
 			url: "/user/get-me",
 			params: {
 				sessionId: cookie.sessionId,
+				// device: ,
 			},
-		}).then((response: AxiosResponse<TUser>) => {
-			return response.data;
-		});
+		})
+			.then((response: AxiosResponse<TUser>) => {
+				return response.data;
+			})
+			.catch((error) => {
+				console.log(error);
+				return null;
+			});
 	}
 
 	useEffect(() => {

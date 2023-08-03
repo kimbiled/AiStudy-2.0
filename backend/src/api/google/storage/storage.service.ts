@@ -7,19 +7,11 @@ import { GoogleConfig } from "@config/google";
 export class StorageService {
 	private readonly bucket = new Storage({
 		keyFilename: GoogleConfig.KEY_FILE,
+		projectId: GoogleConfig.PROJECT_ID,
 	}).bucket(GoogleConfig.BUCKET_NAME);
 
 	public async upload(file: Express.Multer.File, path: string) {
-		const fileName: string = `${new Date().toLocaleString("en-US", {
-			year: "numeric",
-			month: "numeric",
-			day: "numeric",
-			hour: "numeric",
-			minute: "numeric",
-			timeZone: "Asia/Almaty",
-		})}`;
-
-		const fileStream = this.bucket.file(`${path}/${fileName}`).createWriteStream({
+		const fileStream = this.bucket.file(`${path}/${file.originalname}`).createWriteStream({
 			metadata: {
 				contentType: file.mimetype,
 			},
@@ -30,6 +22,6 @@ export class StorageService {
 		});
 
 		fileStream.end(file.buffer);
-		return `${path}/${fileName}`;
+		return `${path}/${file.originalname}`;
 	}
 }

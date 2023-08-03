@@ -13,7 +13,7 @@ import { FileInterceptor } from "@nestjs/platform-express";
 
 import { WritingService } from "@modules/writing/writing.service";
 
-import { CreateWritingDto } from "@modules/writing/dto";
+import { CheckWritingDto, CreateWritingDto } from "@modules/writing/dto";
 import { FilterDto } from "@root/types";
 
 @Controller("/writing")
@@ -31,5 +31,11 @@ export class WritingController {
 	@Get("/get-all")
 	public async getAll(@Query() dto: FilterDto) {
 		return await this.writingService.getAll(dto);
+	}
+
+	@HttpCode(HttpStatus.OK)
+	@Post("/check")
+	public async check(@Body() dto: CheckWritingDto) {
+		return await this.writingService.check(dto);
 	}
 }

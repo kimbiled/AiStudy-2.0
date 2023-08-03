@@ -11,3 +11,8 @@ export class GetSessionDto {
 export class RevokeSessionDto {
 	readonly sessionId: string;
 }
+
+export class ValidateSessionDto {
+	readonly sessionId: string;
+	readonly device: string;
+}

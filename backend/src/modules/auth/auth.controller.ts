@@ -1,10 +1,10 @@
 import { Body, Controller, HttpCode, HttpStatus, Post, Req } from "@nestjs/common";
+import { Request } from "express";
 
 import { AuthService } from "@modules/auth/auth.service";
 
-import { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
-import { Request } from "express";
-import { RevokeSessionDto } from "@modules/session/dto";
+import type { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
+import type { RevokeSessionDto } from "@modules/session/dto";
 
 @Controller("/auth")
 export class AuthController {
@@ -17,7 +17,7 @@ export class AuthController {
 	}
 
 	@HttpCode(HttpStatus.OK)
-	@Post("/local/sign-up")
+	@Post("/local/sign-in")
 	public async localSignIn(@Body() dto: ValidateUserDto, @Req() req: Request) {
 		return await this.authService.localSignIn(dto, req.ip, req.headers["user-agent"]);
 	}

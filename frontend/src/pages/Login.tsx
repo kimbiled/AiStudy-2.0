@@ -1,16 +1,18 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/auth/useAuth.tsx";
 import { useEffect, useRef } from "react";
+import { useUser } from "../context/user/useUser.tsx";
 
 const Login = () => {
-	const { signIn, user } = useAuth();
+	const { localSignIn } = useAuth();
+	const { user } = useUser();
 	const redirectTo = useNavigate();
 
 	const usernameRef = useRef<HTMLInputElement>(null);
 	const passwordRef = useRef<HTMLInputElement>(null);
 
 	useEffect(() => {
-		if (user) redirectTo("/");
+		if (user) return redirectTo("/");
 	}, []);
 
 	return (
@@ -29,7 +31,7 @@ const Login = () => {
 								if (!usernameRef.current) return;
 								if (!passwordRef.current) return;
 
-								signIn({
+								localSignIn({
 									username: usernameRef.current.value,
 									password: passwordRef.current.value,
 								}).then(() => {

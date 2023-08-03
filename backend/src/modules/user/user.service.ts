@@ -7,20 +7,25 @@ import {
 } from "@nestjs/common";
 
 import { PrismaService } from "@modules/prisma/prisma.service";
+import { SessionService } from "@modules/session/session.service";
+import { StorageService } from "@api/google/storage/storage.service";
+import { GmailService } from "@api/google/gmail/gmail.service";
 
 import { StringHelper } from "@helper/string/string.helper";
-
-import { CreateUserDto, GetUserDto, ValidateUserDto } from "@modules/user/dto";
-import { SessionService } from "@modules/session/session.service";
-import { GetSessionDto } from "@modules/session/dto";
-import { FilterDto } from "@root/types";
 import { ObjectHelper } from "@helper/object/object.helper";
+
+import type { CreateUserDto, GetUserDto, UpdateUserDto, ValidateUserDto } from "@modules/user/dto";
+import type { ValidateSessionDto } from "@modules/session/dto";
+import type { FilterDto } from "@root/types";
+import { VerifyMailDto } from "@modules/user/dto";
 
 @Injectable()
 export class UserService {
 	constructor(
 		private readonly prismaService: PrismaService,
 		private readonly sessionService: SessionService,
+		private readonly storageService: StorageService,
+		private readonly gmailService: GmailService,
 		private readonly stringHelper: StringHelper,
 		private readonly objectHelper: ObjectHelper
 	) {}
@@ -67,8 +72,8 @@ export class UserService {
 		return user;
 	}
 
-	public async getMe(dto: GetSessionDto) {
-		const session = await this.sessionService.get(dto);
+	public async getMe(dto: ValidateSessionDto) {
+		const session = await this.sessionService.validate(dto);
 
 		return await this.prismaService.user
 			.findUnique({
@@ -123,5 +128,41 @@ export class UserService {
 			.catch((error) => {
 				throw new InternalServerErrorException(error);
 			});
+	}
+
+	public async update(dto: UpdateUserDto, file?: Express.Multer.File) {
+		let profileImagePath: string;
+
+		if (file) {
+			file.originalname = dto.userId;
+			profileImagePath = await this.storageService.upload(file, "static/users");
+		}
+
+		return await this.prismaService.user
+			.update({
+				where: {
+					id: dto.userId,
+				},
+				data: {
+					firstName: dto.firstName,
+					lastName: dto.lastName,
+					bio: dto.bio,
+					profileImagePath: profileImagePath,
+				},
+			})
+			.then((user) => {
+				return user;
+			})
+			.catch((error) => {
+				throw new InternalServerErrorException(error);
+			});
+	}
+
+	public async verifyMail(dto: VerifyMailDto) {
+		// finish later
+		await this.gmailService.send({
+			to: dto.mail,
+			html: `<a href="http://localhost:8000/">Verify</a>`,
+		});
 	}
 }
