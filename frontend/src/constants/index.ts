@@ -25,11 +25,11 @@ export const navLinks = [
       title: "Главная",
    },
    {
-      id: "game-practice",
+      id: "practice/game",
       title: "Игры",
    },
    {
-      id: "video-practice",
+      id: "practice/video",
       title: "Видеоуроки",
    },
    {
@@ -37,7 +37,7 @@ export const navLinks = [
       title: "Обучение",
    },
    {
-      id: "writing-practice",
+      id: "practice/writing",
       title: "Практика Writing",
    },
    {

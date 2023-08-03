@@ -12,7 +12,7 @@ const GamePractice = () => {
                <h3 className="text-center text-primary text-[30px] leading-[110%] mb-[30px]">
                   Учебные материалы
                </h3>
-               <div className="flex text-smrtBlack mb-[70px] ">
+               {/* <div className="flex text-smrtBlack mb-[70px] ">
                   <div className=" p-4 font-medium">
                      Экзамен:{" "}
                      <span className="font-lato border rounded-lg pl-4 pr-20 py-2 text-transDesc">
@@ -25,7 +25,7 @@ const GamePractice = () => {
                         Writing №1
                      </span>
                   </div>{" "}
-               </div>
+               </div> */}
                <div className="flex flex-wrap justify-center max-w-[1230px] mx-auto gap-[30px]">
                   {games.map((game) => (
                      <Game

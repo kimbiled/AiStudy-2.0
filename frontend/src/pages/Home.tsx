@@ -1,5 +1,5 @@
 import styles from "../style";
-import { Stats, Hero, Info, FQA } from "../components";
+import { Stats, Hero, Info, FQA, Mock } from "../components";
 
 const App = () => {
 	return (
@@ -21,9 +21,10 @@ const App = () => {
 
 			<div className={` bg-smrtBlue ${styles.paddingX} ${styles.flexCenter}`}>
 				<div className={`${styles.boxWidth}`}>
+					<Mock />
 					<Stats />
-					<Info></Info>
-					<FQA></FQA>
+					<Info />
+					<FQA />
 				</div>
 			</div>
 		</div>

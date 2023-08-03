@@ -23,7 +23,7 @@ const Game: React.FC<GameProps> = ({ title, subject, desc, duration }) => {
 	};
 
 	return (
-		<div className="rounded border-2 border-solid border-gray-400 p-[24px] w-[390px] h-[323px] lg:mb-[60px] game-box-shadow flex flex-col justify-between">
+		<div className="rounded border-[1px] border-gray-400 p-[24px] w-[390px] h-[323px] lg:mb-[60px] game-box-shadow flex flex-col justify-between">
 			<div>
 				<h3 className="text-smrtBlue text-[28px] leading-[150%]">{title}</h3>
 				<h4 className="text-transDesc text-[16px] mb-[20px] font-normal">{subject}</h4>

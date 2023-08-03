@@ -10,10 +10,12 @@ const Info = () => {
 					<h2 className="text-smrtBlack shadow1 leading-[40px] ss:leading-[60px] text-[25px] xs:text-[30px] sm:text-[42px] md:text-[48px] lg:text-[55px]">
 						Начните свой путь прямо сейчас вместе с абсолютно новыми методиками
 					</h2>
-					<p className="py-8 text-[#4C4F6A] text-[22px] sm:text-[27px] lg:text-[30px]">
-						Мы предлагаем новую программу подготовки, что позволит <br />
-						сделать ваш график и результат эффективнее!{" "}
-					</p>
+					<div className="w-[900px] m-auto">
+						<p className="py-8 text-[#4C4F6A] text-[22px] sm:text-[27px] lg:text-[30px]">
+							Мы предлагаем новую программу подготовки, что позволит
+							сделать ваш график и результат эффективнее!
+						</p>
+					</div>
 				</div>
 
 				<div className="text-white flex flex-wrap justify-center gap-8 lg:gap-12">

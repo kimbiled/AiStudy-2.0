@@ -20,11 +20,15 @@ export default {
 				practiceGray: "#9495A6",
 				practiceBorderGray: "#C0C0C0",
 				subscribeButton: "#1D293C",
+				mockYellow : "#D1F772"
 			},
 			fontFamily: {
 				poppins: ["Poppins", "sans-serif"],
 				lato: ["Lato", "sans-serif"],
 			},
+			backgroundImage: {
+				'gradient-linear': 'linear-gradient(179deg, #187CDE 0%, #6BB1D3 55.73%, #B4E3A5 100%);'
+			  },
 		},
 		screens: {
 			xs: "480px",

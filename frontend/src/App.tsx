@@ -12,6 +12,7 @@ import Quiz from "../src/components/Quiz/Quiz.tsx";
 import Reading from "./pages/Reading.tsx";
 import Listening from "./pages/Listening.tsx";
 import Speaking from "./pages/Speaking.tsx";
+import Writing from "./pages/Writing.tsx";
 
 import Providers from "./context/Providers.tsx";
 export default function App() {
@@ -24,12 +25,13 @@ export default function App() {
 					<Route path="login" element={<Login />} />
 					<Route path="education" element={<Education />} />
 					<Route path="quiz" element={<Quiz />} />
-					<Route path="writing-practice" element={<WritingPractice />} />
-					<Route path="game-practice" element={<GamePractice />} />
-					<Route path="video-practice" element={<VideoPractice />} />
-					<Route path="reading-practice" element={<Reading />} />
-					<Route path="listening-practice" element={<Listening />} />
-					<Route path="speaking-practice" element={<Speaking />} />
+					<Route path="practice/writing" element={<WritingPractice />} />
+					<Route path="practice/game" element={<GamePractice />} />
+					<Route path="practice/video" element={<VideoPractice />} />
+					<Route path="practice/readingMock" element={<Reading />} />
+					<Route path="practice/listeningMock" element={<Listening />} />
+					<Route path="practice/speakingMock" element={<Speaking />} />
+					<Route path="practice/writingMock" element={<Writing />} />
 					<Route path="profile" element={<Profile />} />
 				</Route>
 			</Routes>
