@@ -1,0 +1,35 @@
+import {
+	Body,
+	Controller,
+	Get,
+	HttpCode,
+	HttpStatus,
+	Post,
+	Query,
+	UploadedFile,
+	UseInterceptors,
+} from "@nestjs/common";
+import { FileInterceptor } from "@nestjs/platform-express";
+
+import { WritingService } from "@modules/writing/writing.service";
+
+import { CreateWritingDto } from "@modules/writing/dto";
+import { FilterDto } from "@root/types";
+
+@Controller("/writing")
+export class WritingController {
+	constructor(private readonly writingService: WritingService) {}
+
+	@HttpCode(HttpStatus.CREATED)
+	@Post("/create")
+	@UseInterceptors(FileInterceptor("file"))
+	public async create(@Body() dto: CreateWritingDto, @UploadedFile() file?: Express.Multer.File) {
+		return await this.writingService.create(dto, file);
+	}
+
+	@HttpCode(HttpStatus.OK)
+	@Get("/get-all")
+	public async getAll(@Query() dto: FilterDto) {
+		return await this.writingService.getAll(dto);
+	}
+}

@@ -4,4 +4,5 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import Info from "./Info";
 import FQA from "./FQA";
-export { Navbar, Stats, Footer, Hero, Info,FQA };
+import Mock from "./Mock";
+export { Navbar, Stats, Footer, Hero, Info,FQA, Mock};
