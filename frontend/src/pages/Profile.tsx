@@ -1,14 +1,18 @@
 import React from "react";
 
 import { useUser } from "../context/user/useUser.tsx";
+
+import Exam from '../components/Profile/Exam.tsx';
+import Lessons from '../components/Profile/Lessons.tsx';
+import CurrentLevel from '../components/Profile/currentLevel.tsx';
 const Profile = () => {
 	const { user } = useUser();
-	const [showModal, setShowModal] = React.useState(false);
-	const [isFullInfo, setFullInfo] = React.useState(false);
+	const [examModal, setExamModal] = React.useState(false);
+	const [currentLevelModal, setCurrentLevelModal] = React.useState(false);
+	const [lessonModal, setLessonModal] = React.useState(false);
 
 	return (
-		<>
-		
+		<section>
 				<div className="font-lato font-bold">
 					<div className="text-center mt-16">
 						<p className="text-smrtBlack shadow1 text-[55px]">
@@ -44,7 +48,12 @@ const Profile = () => {
 								</div>
 
 								<div className="w-[470px] text-center">
-									<button className="w-[345px] h-[54px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out">
+									<button 
+										className="w-[345px] h-[54px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out"
+										onClick={()=>{
+											setExamModal(prevState => !prevState);
+										}}
+										>
 										Изменить
 									</button>
 								</div>
@@ -59,8 +68,13 @@ const Profile = () => {
 									<p className="text-lg">
 										Отслеживаемая часть для просмотра присутствие/отсутствие на занятиях
 									</p>
-									<button className="w-[350px] h-[45px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out">
-										Изменить
+									<button 
+										className="w-[345px] h-[54px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out"
+										onClick={()=>{
+											setLessonModal(prevState => !prevState);
+										}}
+										>
+										Посмотреть
 									</button>
 								</div>
 							</div>
@@ -73,18 +87,22 @@ const Profile = () => {
 									</p>
 									<button
 										type="button"
-										onClick={() => setShowModal(true)}
 										className="w-[350px] h-[45px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out"
+										onClick={()=>{
+											setCurrentLevelModal(prevState => !prevState);
+										}}
 									>
-										{isFullInfo ? "Открыть" : "Изменить"}
+										Посмотреть
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					<Exam isVisible={examModal} setIsVisible={setExamModal}/>
+					<Lessons isOpen={lessonModal} setOpen={setLessonModal}/>
+					<CurrentLevel isDisplayed={currentLevelModal} setDisplayed={setCurrentLevelModal}/>
 				</div>
-			
-		</>
+			</section>
 	);
 };
 
