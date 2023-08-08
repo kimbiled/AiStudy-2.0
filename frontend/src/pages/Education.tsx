@@ -11,7 +11,7 @@ const Education = () => {
          exercise.category == "taskVideo1" ||
          exercise.category == "taskVideo2"
       ) {
-         navigate(`/video-practice?category=${exercise.category}`);
+         navigate(`practice/video?category=${exercise.category}`);
       } else if (
          exercise.category == "taskGame1" ||
          exercise.category == "taskGame2"
