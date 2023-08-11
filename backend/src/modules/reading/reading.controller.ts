@@ -4,7 +4,7 @@ import { ReadingService } from "@modules/reading/reading.service";
 
 import { CreateReadingDto } from "@modules/reading/dto";
 
-@Controller()
+@Controller("/reading")
 export class ReadingController {
 	constructor(private readonly readingService: ReadingService) {}
 
