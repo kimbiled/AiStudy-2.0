@@ -69,17 +69,48 @@ model Reading {
 
     text String
 
+    test   Test   @relation(fields: [testId], references: [id])
+    testId String @unique
+
     createdAt DateTime @default(now())
     alteredAt DateTime @default(now()) @updatedAt
 
     @@map("Readings")
 }
 
+model Listening {
+    id String @id @default(uuid())
+
+    audioPath String
+
+    test   Test   @relation(fields: [testId], references: [id])
+    testId String @unique
+
+    createdAt DateTime @default(now())
+    alteredAt DateTime @default(now()) @updatedAt
+
+    @@map("Listenings")
+}
+
+model Speaking {
+    id String @id @default(uuid())
+
+    thesis String
+
+    createdAt DateTime @default(now())
+    alteredAt DateTime @default(now()) @updatedAt
+
+    @@map("Speakings")
+}
+
 model Test {
     id String @id @default(uuid())
 
-    type    ETestType
     quesion String
+
+    reading   Reading?
+    listening Listening?
+
     answers Answer[]
 
     createdAt DateTime @default(now())
@@ -95,15 +126,10 @@ model Answer {
     isCorrect Boolean
 
     Test   Test   @relation(fields: [testId], references: [id])
-    testId String @unique
+    testId String
 
     createdAt DateTime @default(now())
     alteredAt DateTime @default(now()) @updatedAt
 
     @@map("Answers")
-}
-
-enum ETestType {
-    reading
-    listening
 }
