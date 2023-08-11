@@ -12,12 +12,11 @@ import { StorageService } from "@api/google/storage/storage.service";
 import { GmailService } from "@api/google/gmail/gmail.service";
 
 import { StringHelper } from "@helper/string/string.helper";
-import { ObjectHelper } from "@helper/object/object.helper";
 
 import type { CreateUserDto, GetUserDto, UpdateUserDto, ValidateUserDto } from "@modules/user/dto";
 import type { ValidateSessionDto } from "@modules/session/dto";
 import type { FilterDto } from "@root/types";
-import { VerifyMailDto } from "@modules/user/dto";
+import type { VerifyMailDto } from "@modules/user/dto";
 
 @Injectable()
 export class UserService {
@@ -26,8 +25,7 @@ export class UserService {
 		private readonly sessionService: SessionService,
 		private readonly storageService: StorageService,
 		private readonly gmailService: GmailService,
-		private readonly stringHelper: StringHelper,
-		private readonly objectHelper: ObjectHelper
+		private readonly stringHelper: StringHelper
 	) {}
 
 	public async create(dto: CreateUserDto) {
@@ -52,6 +50,7 @@ export class UserService {
 				return user;
 			})
 			.catch((error) => {
+				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
 	}
@@ -86,6 +85,7 @@ export class UserService {
 				return user;
 			})
 			.catch((error) => {
+				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
 	}
@@ -106,18 +106,14 @@ export class UserService {
 				return user;
 			})
 			.catch((error) => {
+				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
 	}
 
 	public async getAll(dto: FilterDto) {
-		dto = this.objectHelper.removeNulls(dto);
-		dto = this.objectHelper.parseNumbers(dto);
-
 		return await this.prismaService.user
-			.findMany({
-				...dto,
-			})
+			.findMany(dto)
 			.then((users) => {
 				for (const user of users) {
 					delete user.password;
@@ -126,6 +122,7 @@ export class UserService {
 				return users;
 			})
 			.catch((error) => {
+				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
 	}
@@ -154,6 +151,7 @@ export class UserService {
 				return user;
 			})
 			.catch((error) => {
+				console.log(error);
 				throw new InternalServerErrorException(error);
 			});
 	}
