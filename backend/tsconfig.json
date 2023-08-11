@@ -19,7 +19,8 @@
 			"@modules/*": ["./modules/*"],
 
 			"@lib/*": ["./lib/*"],
-			"@helper/*": ["./helper/*"]
+			"@helper/*": ["./helper/*"],
+			"@pipes/*": ["./pipes/*"]
 		},
 		"incremental": true,
 		"skipLibCheck": true,

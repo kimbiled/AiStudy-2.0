@@ -9,15 +9,20 @@ import {
 	Req,
 	UploadedFile,
 	UseInterceptors,
+	UsePipes,
 } from "@nestjs/common";
 
 import { UserService } from "@modules/user/user.service";
 import { FileInterceptor } from "@nestjs/platform-express";
-
-import type { GetUserDto, UpdateUserDto, GetMeDto } from "@modules/user/dto";
-import type { FilterDto } from "@root/types";
 import { Request } from "express";
+import { ApiTags } from "@nestjs/swagger";
 
+import { IntPipe } from "@pipes/int.pipe";
+
+import { GetUserDto, UpdateUserDto, GetMeDto } from "@modules/user/dto";
+import { FilterDto } from "@root/types";
+
+@ApiTags("/user")
 @Controller("/user")
 export class UserController {
 	constructor(private readonly userService: UserService) {}
@@ -39,6 +44,7 @@ export class UserController {
 
 	@HttpCode(HttpStatus.OK)
 	@Get("/get-all")
+	@UsePipes(IntPipe)
 	public async getAll(@Query() dto: FilterDto) {
 		return await this.userService.getAll(dto);
 	}

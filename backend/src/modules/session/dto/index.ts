@@ -1,3 +1,5 @@
+import { ApiProperty } from "@nestjs/swagger";
+
 export class CreateSessionDto {
 	readonly userId: string;
 	ip: string;
@@ -9,6 +11,7 @@ export class GetSessionDto {
 }
 
 export class RevokeSessionDto {
+	@ApiProperty()
 	readonly sessionId: string;
 }
 
