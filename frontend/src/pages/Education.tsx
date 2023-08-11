@@ -11,27 +11,25 @@ const Education = () => {
          exercise.category == "taskVideo1" ||
          exercise.category == "taskVideo2"
       ) {
-         navigate(`/video-practice?category=${exercise.category}`);
+         navigate(`/practice/video?category=${exercise.category}`);
       } else if (
          exercise.category == "taskGame1" ||
          exercise.category == "taskGame2"
       ) {
-         navigate(`/game-practice?category=${exercise.category}`);
+         navigate(`/practice/game?category=${exercise.category}`);
       } else if (
          exercise.category == "taskWriting1" ||
          exercise.category == "taskWriting2"
       ) {
-         navigate(`/writing-practice?category=${exercise.category}`);
+         navigate(`/practice/writing?category=${exercise.category}`);
       } else if (exercise.category == "readingTasks") {
-         navigate(`/reading-practice?category=${exercise.category}`);
+         navigate(`/practice/readingMock?category=${exercise.category}`);
       } else if (exercise.category == "listeningTasks") {
-         navigate(`/listening-practice?category=${exercise.category}`);
+         navigate(`/practice/listeningMock?category=${exercise.category}`);
       } else if (exercise.category == "speakingTasks") {
-         navigate(`/speaking-practice?category=${exercise.category}`);
-      } else if (
-         exercise.category == "taskVerbal" ||
-         exercise.category == "taskMath"
-      ) {
+         navigate(`/practice/speakingMock?category=${exercise.category}`);
+      }
+      {
          console.log("hello");
       }
       window.scrollTo(0, 0);

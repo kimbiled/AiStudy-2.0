@@ -1,5 +1,5 @@
 import React from "react";
-import UserLevel from "../components/UserLevel";
+
 import { useUser } from "../context/user/useUser.tsx";
 const Profile = () => {
 	const { user } = useUser();
@@ -8,9 +8,7 @@ const Profile = () => {
 
 	return (
 		<>
-			{showModal ? (
-				<UserLevel active={showModal} setActive={setShowModal} isFull={isFullInfo} setFull={setFullInfo} />
-			) : (
+		
 				<div className="font-lato font-bold">
 					<div className="text-center mt-16">
 						<p className="text-smrtBlack shadow1 text-[55px]">
@@ -85,7 +83,7 @@ const Profile = () => {
 						</div>
 					</div>
 				</div>
-			)}
+			
 		</>
 	);
 };
