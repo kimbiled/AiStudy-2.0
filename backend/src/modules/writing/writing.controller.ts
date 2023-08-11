@@ -10,12 +10,14 @@ import {
 	UseInterceptors,
 } from "@nestjs/common";
 import { FileInterceptor } from "@nestjs/platform-express";
+import { ApiTags } from "@nestjs/swagger";
 
 import { WritingService } from "@modules/writing/writing.service";
 
 import { CheckWritingDto, CreateWritingDto } from "@modules/writing/dto";
 import { FilterDto } from "@root/types";
 
+@ApiTags("/writing")
 @Controller("/writing")
 export class WritingController {
 	constructor(private readonly writingService: WritingService) {}

@@ -3,8 +3,8 @@ import { Injectable } from "@nestjs/common";
 import { UserService } from "@modules/user/user.service";
 import { SessionService } from "@modules/session/session.service";
 
-import { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
-import { RevokeSessionDto } from "@modules/session/dto";
+import type { CreateUserDto, ValidateUserDto } from "@modules/user/dto";
+import type { RevokeSessionDto } from "@modules/session/dto";
 
 @Injectable()
 export class AuthService {

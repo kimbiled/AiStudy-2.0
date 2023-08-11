@@ -1,12 +1,14 @@
 import { Body, Controller, Get, HttpCode, HttpStatus, Post, Query, UsePipes } from "@nestjs/common";
+import { ApiTags } from "@nestjs/swagger";
 
 import { SpeakingService } from "@modules/speaking/speaking.service";
 
 import { IntPipe } from "@pipes/int.pipe";
 
-import type { CreateSpeakingDto } from "@modules/speaking/dto";
-import type { FilterDto } from "@root/types";
+import { CreateSpeakingDto } from "@modules/speaking/dto";
+import { FilterDto } from "@root/types";
 
+@ApiTags("/speaking")
 @Controller("/speaking")
 export class SpeakingController {
 	constructor(private readonly speakingService: SpeakingService) {}
