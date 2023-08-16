@@ -21,18 +21,18 @@ export const navLinks = [
       id: "practice/game",
       title: "Игры",
    },
-   {
-      id: "practice/video",
-      title: "Видеоуроки",
-   },
+   // {
+   //    id: "practice/video",
+   //    title: "Видеоуроки",
+   // },
    {
       id: "education",
       title: "Обучение",
    },
-   {
-      id: "practice/writing",
-      title: "Практика Writing",
-   },
+   // {
+   //    id: "practice/writing",
+   //    title: "Практика Writing",
+   // },
    {
       id: "profile",
       title: "Моя страница",
