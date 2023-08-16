@@ -20,7 +20,7 @@ const Listening = () => {
    const handleButton = () => {
       console.log(selectedAnswers);
       if (selectedAnswers.includes(null)) {
-         alert("lox");
+         alert("Well Done!");
       } else {
          const correctMatches = selectedAnswers.reduce(
             (count, selectedAnswer, index) => {

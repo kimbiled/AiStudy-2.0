@@ -1,8 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/auth/useAuth.tsx";
+import { useAuth } from "../context/Auth/useAuth";
+import { useUser } from "../context/user/useUser";
 import { useEffect, useRef } from "react";
 const Register = () => {
-	const { signUp, user } = useAuth();
+	const { localSignUp } = useAuth();
+	const {	user	} = useUser();
+
 	const redirectTo = useNavigate();
 
 	const emailRef = useRef<HTMLInputElement>(null);
@@ -33,7 +36,7 @@ const Register = () => {
 								if (!passwordRef.current) return;
 								if (!confirmPasswordRef.current) return;
 
-								signUp({
+								localSignUp({
 									username: usernameRef.current.value,
 									email: emailRef.current.value,
 									password: passwordRef.current.value,
