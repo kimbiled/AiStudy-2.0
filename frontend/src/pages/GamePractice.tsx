@@ -1,5 +1,5 @@
 import Game from "../components/Game";
-import { games } from "../constants";
+import { games } from "../assets/icons";
 import styles from "../style";
 const GamePractice = () => {
    return (

@@ -27,7 +27,8 @@ export default {
 				lato: ["Lato", "sans-serif"],
 			},
 			backgroundImage: {
-				'gradient-linear': 'linear-gradient(179deg, #187CDE 0%, #6BB1D3 55.73%, #B4E3A5 100%);'
+				'gradient-linear': 'linear-gradient(179deg, #187CDE 0%, #6BB1D3 55.73%, #B4E3A5 100%);',
+				'gradient-linear2': ' linear-gradient(180deg, #D0F0C5 0%, #D1F772 100%);'
 			  },
 		},
 		screens: {

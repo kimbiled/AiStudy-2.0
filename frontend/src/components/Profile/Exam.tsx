@@ -30,11 +30,11 @@ const Exam = ({ isVisible, setIsVisible}: ExamProps) =>{
                     <input placeholder="Дата экзамена" type="text" className="border-[1px] border-black rounded w-full h-11 p-4 font-light"/>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <p className="font-medium text-xl">Текущий уровень</p>
+                    <p className="font-medium text-xl">Желаемый уровень</p>
                     <input placeholder="Уровень" type="text" className="border-[1px] border-black rounded w-full h-11 p-4 font-light"/>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <p className="font-medium text-xl">Желаемый уровень</p>
+                    <p className="font-medium text-xl">Текущий уровень</p>
                     <input placeholder="Уровень" type="text" className="border-[1px] border-black rounded w-full h-11 p-4 font-light"/>
                 </div>
                 <button className="w-full h-[54px] border-[1px] border-smrtBlue text-white bg-smrtBlue text-sm rounded hover:bg-blue-700 hover:ease-in-out">

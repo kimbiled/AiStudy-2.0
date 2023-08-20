@@ -1,4 +1,4 @@
-import { stats } from "../constants";
+import { stats } from "../assets/icons";
 import styles from "../style";
 
 const Stats = () => (
