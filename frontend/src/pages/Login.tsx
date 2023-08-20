@@ -48,7 +48,7 @@ const Login = () => {
 									name="username"
 									id="username"
 									className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-									placeholder="Your username"
+									placeholder="Иван Иванов"
 									required
 									ref={usernameRef}
 								/>
@@ -90,11 +90,9 @@ const Login = () => {
 									Забыли пароль?
 								</a>
 							</div>
-							<button
-								type="submit"
-								className="w-full text-white bg-smrtBlue hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-							>
+							<button className="group relative h-11 w-full overflow-hidden rounded-xl bg-smrtBlue text-white" type="submit">
 								Войти
+								<div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
 							</button>
 							<p className="text-sm font-light text-gray-500 dark:text-gray-400">
 								Нет аккаунта?

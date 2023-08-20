@@ -2,6 +2,7 @@ import styles from "../style";
 import { Stats, Hero, Info, FQA, Mock } from "../components";
 
 const App = () => {
+	
 	return (
 		<div className=" w-full overflow-hidden">
 			<div>

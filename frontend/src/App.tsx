@@ -13,6 +13,7 @@ import Reading from "./pages/Reading.tsx";
 import Listening from "./pages/Listening.tsx";
 import Speaking from "./pages/Speaking.tsx";
 import Writing from "./pages/Writing.tsx";
+import Mock from "./pages/Mock.tsx";
 
 import Providers from "./context/Providers.tsx";
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
 					<Route path="practice/speakingMock" element={<Speaking />} />
 					<Route path="practice/writingMock" element={<Writing />} />
 					<Route path="profile" element={<Profile />} />
+					<Route path="mock" element={<Mock />}/>
 				</Route>
 			</Routes>
 		</Providers>

@@ -39,20 +39,6 @@ const WritingPractice = () => {
             Учебные материалы
          </h2>
          <div className={` ${styles.paddingX}  `}>
-            <div className="flex space-x-4">
-               <div className="py-4 font-lato text-lg text-smrtBlack">
-                  Экзамен
-                  <span className=" font-lato border text-sm rounded-lg ml-2 text-gray-400 pl-4 pr-20 py-2">
-                     IELTS
-                  </span>
-               </div>
-               <div className="py-4 font-lato text-lg text-smrtBlack">
-                  Уроки
-                  <span className=" font-lato border text-sm rounded-lg ml-2  text-gray-400  pl-4 pr-20 py-2">
-                     Writing №1
-                  </span>
-               </div>{" "}
-            </div>
             <label
                htmlFor="input-group-1"
                className="block font-lato mb-2 text-lg font-medium text-smrtBlack "
@@ -98,12 +84,10 @@ const WritingPractice = () => {
                         ></textarea>
                      </div>
                   </div>
-                  <button
-                     type="submit"
-                     className="inline-flex items-center px-10 py-3 text-lg font-medium text-center text-white bg-smrtBlue rounded-lg focus:ring-4 focus:ring-blue-200 "
-                  >
-                     Отправить
-                  </button>
+                  <button className="group relative h-11 w-44 overflow-hidden rounded-xl bg-smrtBlue text-white" type="submit">
+								Отправить
+								<div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+						</button>
                </form>
 
                <div className=" max-w-[600px] lg:w-[600px] h-[540px] p-4 flex flex-col items-center border rounded-lg justify-center  ">

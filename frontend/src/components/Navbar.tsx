@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks } from "../assets/icons/index.ts";
 import { Link } from "react-router-dom";
 import { useUser } from "../context/user/useUser.tsx";
 

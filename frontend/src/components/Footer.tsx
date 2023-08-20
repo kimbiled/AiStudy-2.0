@@ -1,6 +1,6 @@
 import styles from "../style";
 import { logo } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks, socialMedia } from "../assets/icons";
 import "../index.css";
 const Footer = () => (
 	<section className={`${styles.flexCenter} ${styles.paddingY} ${styles.paddingX} flex-col bg-footerBg `}>
