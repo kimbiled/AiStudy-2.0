@@ -224,3 +224,46 @@
 .shadowHeader{
 	text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
 }
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+  }
+  
+  /* Audio recorder container styles */
+  .audio-recorder-container {
+	margin-bottom: 20px;
+  }
+  
+  /* Audio controls container styles */
+  .audio-controls-container {
+	text-align: center;
+  }
+  
+  /* Send button styles */
+  .send-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+  }
+  
+  .send-button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Audio player styles */
+  audio {
+	width: 100%;
+	max-width: 400px;
+	margin: 10px 0;
+  }

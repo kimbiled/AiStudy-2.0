@@ -1,8 +1,38 @@
 import { useState } from "react";
 import styles from "../style";
+// @ts-ignore
+import { AudioRecorder } from "react-audio-voice-recorder";
 import exercises from "../constants/db.json";
 const Listening = () => {
    const question = exercises.speakingTasks[0].question;
+   const [audioBlob, setAudioBlob] = useState(null);
+
+   const addAudioElement = (blob: any) => {
+      setAudioBlob(blob);
+   };
+
+   const sendAudioToBackend = () => {
+      if (audioBlob) {
+         // Create a FormData object to hold the audio file
+         const formData = new FormData();
+         formData.append("audioFile", audioBlob, "recorded-audio.webm");
+
+         // Send the audio file to the back-end using Fetch API
+         fetch("/api/upload-audio", {
+            method: "POST",
+            body: formData,
+         })
+            .then((response) => response.json())
+            .then((data) => {
+               console.log("Audio sent successfully:", data);
+            })
+            .catch((error) => {
+               console.error("Error sending audio:", error);
+            });
+
+         setAudioBlob(null);
+      }
+   };
    return (
       <>
          <section className="pb-[150px] pt-[40px]">
@@ -20,10 +50,30 @@ const Listening = () => {
                   <h4 className="text-[20px] font-medium heading-[120%] mb-[10px]">
                      Task: {question}
                   </h4>
-                  <input type="file" id="upload" className="text-[10px]" />
+                  <div className="audio-recorder-container">
+                     <AudioRecorder
+                        onRecordingComplete={addAudioElement}
+                        audioTrackConstraints={{
+                           noiseSuppression: true,
+                           echoCancellation: true,
+                        }}
+                        onNotAllowedOrFound={(err: any) => console.table(err)}
+                        mediaRecorderOptions={{
+                           audioBitsPerSecond: 128000,
+                        }}
+                     />
+                  </div>
+                  {audioBlob && (
+                     <div className="audio-controls-container">
+                        <audio src={URL.createObjectURL(audioBlob)} controls />
+                     </div>
+                  )}
                </div>
                <div className="w-60 xs:w-[260px] h-18 ml-auto">
-                  <button className="group relative w-full h-12 overflow-hidden rounded-[4px] bg-smrtBlue  text-white font-bold">
+                  <button
+                     className="group relative w-full h-12 overflow-hidden rounded-[4px] bg-smrtBlue  text-white font-bold"
+                     onClick={sendAudioToBackend}
+                  >
                      Завершить
                      <div className="absolute inset-0 h-full w-full scale-0 rounded-[4px] transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
                   </button>
